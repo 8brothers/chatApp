@@ -1,0 +1,20 @@
+<% if (locals.msg) { %>
+<h2><%= msg %></h2>
+<% } %>
+<form action="/addrooms" method="post">
+    <div class="form-control">
+        <label for="username">room Name</label>
+        <input type="text" name="roomName" placeholder="Room Name">        
+    </div>
+    <div class="form-control">
+        <label for="username">room type</label>
+        <input type="text" name="roomtype" placeholder="Room type">
+    </div>
+    <div class="form-control">
+        <label for="username">user allowed</label>
+        <input type="number" name="usersAllowed"  placeholder="username">
+        <input type="hidden" name="isActive" value="true">
+    </div>
+    
+    <input type="submit" value="submit">
+</form>
